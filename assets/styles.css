@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color: #181D32;
+    --secondary-color: rgba(55, 107, 248, 1);
+    --accent-color: #EAEEFF;
+    --primary-font: 'Ubuntu', sans-serif;
+}
+
+body{
+    
+    font-family: var(--primary-font);
+    position: relative;
+}
+
+.align{
+    padding: 0 3rem;
+}
+
+/* NAVBAR */
+.nav-container{
+    color: white;
+    width: 100%;
+    padding: 0 3rem;
+    
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    list-style: none;
+    font-weight: bolder;
+}
+.menu a{
+    color: var(--accent-color);
+    text-decoration: none;
+    
+}
+.menu li:hover{
+    text-decoration: underline;
+    color: var(--secondary-color);
+}
+.home{
+    background-image: linear-gradient(to right, #181d32, #171c35, #151c37, #141b3a, #131a3c, #12193c, #11183c, #10173c, #0f153a, #0f1438, #0e1236, #0e1034);
+    position: relative;
+}
+/* HERO SECTION */
+.hero{
+    width: 100vw;
+    height: calc(100vh - 72px);
+    color: var(--accent-color);
+    opacity: .9;
+    height: 100vh;
+    width: 100vw;
+}
+.hero-desc{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.dev{
+    /* color: rgba(55, 107, 248, 1); */
+    font-weight: bold;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    background: radial-gradient(rgb(55 107 248), transparent);
+    animation: shine2 4s linear infinite;
+    background-size: 160%;
+}
+@keyframes shine2{
+    100% {
+    background-position: 200% center;
+    }
+    }
+
+.user{
+    width: 285px;
+    position: absolute;
+    top : 10%;
+    right: 21%;
+}
+
+.down{
+    position: absolute;
+    top: 65%;
+    left: 2.5%;
+}
+.down i{
+    color: var(--accent-color);
+    font-size: 3rem;
+}
+
+/* SOCIALS */
+.socials{
+    display: flex;
+    flex-direction: column;
+    color: var(--accent-color);
+    gap: .5rem;
+    font-size: 1.5rem;
+    position: fixed;
+    top: 66%;
+    right: 3rem;
+}
+
+.social-col{
+    color: var(--primary-color);
+}
+
+.socials i{
+    transition: .8s;
+}
+.socials i:hover{
+    transform: scale(1.6);
+}
+
+/* ABOUT SECTION */
+.about {
+    color: var(--accent-color);
+    padding-right: 12rem;
+    height: 100vh;
+    padding-top: 10%;
+}
+.about h4{
+    font-size: 2.6rem;
+    color: var(--primary-color)
+}
+
+
+/* SERVICES */
+.services{
+    background-color: var(--primary-color);
+}
+.cards-sec{
+    margin: 0 auto;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.cards{
+    width: 30%;
+    height: 44vh;
+    color: var(--accent-color);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    position: relative;
+    
+}
+.cards i{
+    font-size: 2.5rem;
+    
+}
+.cards:hover{
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    font-weight: bolder;
+}
+/* span{
+    font-size: 25px;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    height: 65px;
+    width: 65px;
+    line-height: 65px;
+    text-align: center;
+    color: #fff;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    background: var(--accent-color);
+    border-radius: 70% 30% 30% 70%/60% 40% 60% 40%;
+} */
+
+/* CONTACT */
+.contact-banner{
+    height: 40vh;
+    width: 100vw;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-banner .con{
+    border: 2px solid var(--secondary-color);
+    padding: 4px;
+}
+.hstack{
+    justify-content: center;
+}
